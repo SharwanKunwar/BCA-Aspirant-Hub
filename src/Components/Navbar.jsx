@@ -1,5 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
+import NavMenuToggle from './NavMenuToggle';
+
+
 // import connection from '../assets/connection.GIF';  // Correct import
 
 function Navbar() {
@@ -50,7 +53,9 @@ function Navbar() {
         {/* //right */}
         <div className='w-[20%] h-[100%] flex justify-center items-center'>
             <section className='sm:hidden'>
-                <a href="#"> <i className="ri-menu-3-line text-black text-3xl"></i></a>
+                {/* <a href="#"> <i className="ri-menu-3-line text-black text-3xl"></i></a> */}
+                <NavMenuToggle/>
+
             </section>
             <section className='hidden sm:w-full sm:h-full sm:flex sm:justify-around sm:items-center px-20'>
                 <a href="#">
