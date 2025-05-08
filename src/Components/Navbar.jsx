@@ -18,7 +18,7 @@ function Navbar() {
         <div className=' w-[20%] h-[100%] flex justify-center items-center'>
             <section className='sm:hidden block'>
             {/* <a href="#"><img src={connection} alt="Animated GIF" /></a>  */}
-            <img className='sm:w-[60px] w-[50px]' src="./src/assets/graduation-hat.png" alt="logo" />
+            <img className='sm:w-[60px] w-[50px]' src="/vite.svg" alt="logo" />
             </section>
             <section className='hidden sm:block'>
                 <h1 className='font-bold text-2xl'>BCA <span className='font-extrabold'>-</span> <span className='text-yellow-300'>Aspirant</span></h1>
@@ -52,11 +52,18 @@ function Navbar() {
             <section className='sm:hidden'>
                 <a href="#"> <i className="ri-menu-3-line text-black text-3xl"></i></a>
             </section>
-            <section className='hidden sm:w-full sm:h-full sm:flex sm:justify-around sm:items-center sm:pl-15 sm:pr-15'>
-                <a href="#"><i class="ri-facebook-circle-fill sm:w-[30px]"></i></a>
-                <a href="#"><img className='sm:w-[30px]' src="./src/assets/social02.png" alt="github" /></a>
-                <a href="#"><img className='sm:w-[30px]' src="./src/assets/social03.png" alt="linkdin" /></a>
+            <section className='hidden sm:w-full sm:h-full sm:flex sm:justify-around sm:items-center px-20'>
+                <a href="#">
+                    <i className="ri-facebook-circle-fill text-2xl"></i>
+                </a>
+                <a href="#">
+                    <i className="ri-github-fill text-2xl"></i>
+                </a>
+                <a href="#">
+                    <i className="ri-instagram-fill text-2xl"></i>
+                </a>
             </section>
+
         </div>
       </nav>
     </div>
