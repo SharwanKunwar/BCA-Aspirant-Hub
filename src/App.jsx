@@ -11,14 +11,9 @@ function App() {
   return (
     <>
       <div id='app-outer'>
-      <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
-
+        <Navbar/>
+        <Home/>
+        <About/>
       </div>
     </>
   )

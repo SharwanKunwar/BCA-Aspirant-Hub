@@ -3,7 +3,7 @@ import TypingAnimatedText from './Typing'
 
 function Home() {
   return (
-    <div className="relative w-screen h-screen flex justify-center items-center flex-col gap-5 text-white">
+    <div id='home-outer' className="relative w-screen h-screen flex justify-center items-center flex-col gap-5 text-white">
     {/* Background Image with Blur */}
     <div className='absolute inset-0 bg-[url("/src/assets/pic02.jpg")] bg-cover bg-center blur-[1px] -z-10'></div>
     {/* Content */}
