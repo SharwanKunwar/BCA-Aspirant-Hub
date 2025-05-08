@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import NavMenuToggle from './NavMenuToggle';
+import { Link } from "react-router-dom";
+
 
 
 // import connection from '../assets/connection.GIF';  // Correct import
@@ -30,24 +32,24 @@ function Navbar() {
         {/* //middle */}
         <div className='w-[50%] h-[50%] sm:block flex justify-center items-center'>
             <ul className='sm:flex justify-around items-center w-full h-full hidden'>
-                <a href="#" className={`${style01.base} ${style01.hover}`}>
-                    <li>Home</li>
-                </a>
-                <a href="#" className={`${style01.base} ${style01.hover}`}>
-                    <li>About</li>
-                </a>
-                <a href="#" className={`${style01.base} ${style01.hover}`}>
-                    <li>Sem</li>
-                </a>
-                <a href="#" className={`${style01.base} ${style01.hover}`}>
-                    <li>Notes</li>
-                </a>
-                <a href="#" className={`${style01.base} ${style01.hover}`}>
-                    <li>Blogs</li>
-                </a>
-                <a href="#" className={`${style01.base} ${style01.hover}`}>
-                    <li>Contact</li>
-                </a>
+            <Link to="/" className={`${style01.base} ${style01.hover}`}>
+                <li>Home</li>
+            </Link>
+            <Link to="/about" className={`${style01.base} ${style01.hover}`}>
+            <li>About</li>
+            </Link>
+            <Link to="/sem" className={`${style01.base} ${style01.hover}`}>
+            <li>Sem</li>
+            </Link>
+            <Link to="/notes" className={`${style01.base} ${style01.hover}`}>
+            <li>Notes</li>
+            </Link>
+            <Link to="/blogs" className={`${style01.base} ${style01.hover}`}>
+            <li>Blogs</li>
+            </Link>
+            <Link to="/contact" className={`${style01.base} ${style01.hover}`}>
+            <li>Contact</li>
+            </Link>
             </ul>
         </div>
         {/* //right */}

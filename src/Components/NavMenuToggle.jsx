@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Menu } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom'; 
 
 const NavMenuToggle = () => {
     const list = ["Home","About","Sem","Notes","Blogs","Contact"];
@@ -52,7 +53,9 @@ const NavMenuToggle = () => {
                     }`}
                     onClick={() => handleItemClick(item)}
                   >
-                    {item}
+                      <Link to={`/${item.toLowerCase()}`} onClick={() => handleItemClick(item)}>
+                                            {item}
+                                        </Link>
                   </li>
                 ))}
               </ul>
