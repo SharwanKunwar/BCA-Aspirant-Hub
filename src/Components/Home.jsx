@@ -20,21 +20,21 @@ function Home() {
       </section>
     </div>
   
-    <div className='w-[90%] h-[60%] flex justify-center items-center gap-5 flex-col'>
-    <button className='w-[200px] bg-blue-500 text-white font-bold border-0 h-[45px] rounded-[7px] hover:bg-black hover:text-white hover:shadow-[0px_0px_10px_2px_white] transition-all'>
+    <div className='w-[90%] h-[40%] sm:flex flex justify-center items-center gap-5 flex-col sm:flex-row'>
+    <button className='sm:w-[200px] w-[200px] bg-blue-500 text-white font-bold border-0 sm:h-[40px] h-[45px] rounded-[7px] hover:bg-black hover:text-white hover:shadow-[0px_0px_10px_2px_white] transition-all'>
   Connect
 </button>
-<button className='w-[150px] bg-white text-black h-[40px] rounded-[5px] hover:bg-black hover:text-white hover:shadow-[0px_0px_10px_2px_white] transition-all'>
+<button className='w-[150px]  border-1 text-white h-[40px] rounded-[5px] hover:bg-black hover:text-white hover:shadow-[0px_0px_10px_2px_white] transition-all'>
   Learn More
 </button>
 
-<section className='w-[90%] h-[20%] flex justify-center items-end gap-5'>
+    </div>
+<section className=' w-[90%] sm:h-[40%] h-[25%] flex justify-center sm:items-center items-start gap-10'>
   <a href="#facebook"><i className="ri-facebook-circle-fill text-2xl"></i></a>
   <a href="#github"><i className="ri-github-fill text-2xl"></i></a>
   <a href="#instagram"><i className="ri-instagram-fill text-2xl"></i></a>
 </section>
 
-    </div>
   </div>
   
   
