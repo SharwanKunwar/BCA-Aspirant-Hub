@@ -61,19 +61,23 @@ function Home() {
         ))}
       </div>
 
-      {/* Buttons */}
+      {/* Buttons  */}
       <div className="w-[90%] h-[40%] sm:flex flex justify-center items-center gap-5 flex-col sm:flex-row">
+        <a href="https://www.facebook.com/sravana.kumvara/about/">
         <button className="sm:w-[200px] w-[200px] bg-blue-500 text-white font-bold border-0 sm:h-[40px] h-[45px] rounded-[7px] hover:border-1 hover:bg-blue-400/5 hover:text-white hover:shadow-[0px_0px_6px_1px_white] transition-all">
           Connect
         </button>
+        </a>
+        <a href="https://sharwankunwar.github.io/My-Portfolio-07/?fbclid=IwZXh0bgNhZW0CMTEAYnJpZBExdW4yQXVaQ2FZZDZGc245bQEeI2m7WQEI96Npw49oLsSBMWxaa3-G6yTTRNtCkFY22z22hIvvgg6_N7Oloak_aem_rOUNPFnReZ5uANrkleTKLA#">
         <button className="sm:w-[200px] w-[150px] border-1 text-white h-[40px] rounded-[5px] hover:bg-blue-500 hover:text-white hover:shadow-[0px_0px_5px_1px_white] transition-all">
           Learn More
         </button>
+        </a>
       </div>
 
       {/* Social Media Links */}
       <section className="w-[90%] sm:h-[40%] h-[25%] flex justify-center sm:items-center items-start gap-10 sm:hidden">
-        <a href="https://www.facebook.com/sravana.kumvara/">
+        <a href="https://www.facebook.com/">
           <i className="ri-facebook-circle-fill text-2xl"></i>
         </a>
         <a href="https://github.com/SharwanKunwar">
