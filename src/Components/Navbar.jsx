@@ -28,7 +28,7 @@ function Navbar() {
         <div className='w-[50%] h-[50%] sm:block flex justify-center items-center'>
             <ul className='sm:flex justify-around items-center w-full h-full hidden'>
                 <a href="#" className={`${style01.base} ${style01.hover}`}>
-                    <li>Home</li>
+                    <li>Ho0me</li>
                 </a>
                 <a href="#" className={`${style01.base} ${style01.hover}`}>
                     <li>About</li>
