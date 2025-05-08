@@ -21,8 +21,13 @@ function Home() {
     </div>
   
     <div className='w-[90%] h-[60%] flex justify-center items-center gap-5'>
-        <button className='w-[150px] bg-white text-black h-[40px] rounded-4xl hover:shadow-white-2xl'>Explore</button>
-        <button className='w-[150px] bg-white text-black h-[40px] rounded-4xl'>More</button>
+    <button className='w-[150px] bg-white text-black h-[40px] rounded-4xl hover:bg-black hover:text-white hover:shadow-[0px_0px_10px_2px_white] transition-all'>
+  Explore
+</button>
+<button className='w-[150px] bg-white text-black h-[40px] rounded-4xl hover:bg-black hover:text-white hover:shadow-[0px_0px_10px_2px_white] transition-all'>
+  More
+</button>
+
     </div>
   </div>
   
