@@ -28,7 +28,7 @@ function Navbar() {
         <div className='w-[50%] h-[50%] sm:block flex justify-center items-center'>
             <ul className='sm:flex justify-around items-center w-full h-full hidden'>
                 <a href="#" className={`${style01.base} ${style01.hover}`}>
-                    <li>Ho0me</li>
+                    <li>Home</li>
                 </a>
                 <a href="#" className={`${style01.base} ${style01.hover}`}>
                     <li>About</li>
@@ -53,7 +53,7 @@ function Navbar() {
                 <a href="#"> <i className="ri-menu-3-line text-black text-3xl"></i></a>
             </section>
             <section className='hidden sm:w-full sm:h-full sm:flex sm:justify-around sm:items-center sm:pl-15 sm:pr-15'>
-                <a href="#"><img className='sm:w-[30px]' src="./src/assets/social01.png" alt="facebook" /></a>
+                <a href="#"><i class="ri-facebook-circle-fill sm:w-[30px]"></i></a>
                 <a href="#"><img className='sm:w-[30px]' src="./src/assets/social02.png" alt="github" /></a>
                 <a href="#"><img className='sm:w-[30px]' src="./src/assets/social03.png" alt="linkdin" /></a>
             </section>
