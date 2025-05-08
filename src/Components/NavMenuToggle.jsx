@@ -3,6 +3,7 @@ import { X, Menu } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const NavMenuToggle = () => {
+    const list = ["Home","About","Sem","Notes","Blogs","Contact"];
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -34,7 +35,16 @@ const NavMenuToggle = () => {
               className="bg-white p-6 rounded-2xl shadow-lg w-64"
               onClick={(e) => e.stopPropagation()}
             >
-              <p className="text-center text-lg font-semibold">Menu Content Here</p>
+              <ul className="space-y-4 text-center">
+                {list.map((item, index) => (
+                  <li
+                    key={index}
+                    className="text-lg font-semibold cursor-pointer hover:text-blue-500 active:text-blue-700 transition-colors"
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           </motion.div>
         )}
