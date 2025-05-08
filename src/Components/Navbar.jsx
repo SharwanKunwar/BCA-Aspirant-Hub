@@ -18,7 +18,7 @@ function Navbar() {
         <div className=' w-[20%] h-[100%] flex justify-center items-center'>
             <section className='sm:hidden block'>
             {/* <a href="#"><img src={connection} alt="Animated GIF" /></a>  */}
-            <img className='sm:w-[60px] w-[50px]' src="/vite.svg" alt="logo" />
+            <img className='sm:w-[60px] w-[50px]' src="/graduation-hat.png" alt="logo" />
             </section>
             <section className='hidden sm:block'>
                 <h1 className='font-bold text-2xl'>BCA <span className='font-extrabold'>-</span> <span className='text-yellow-300'>Aspirant</span></h1>
