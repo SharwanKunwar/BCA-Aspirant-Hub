@@ -63,26 +63,41 @@ function Home() {
 
       {/* Buttons */}
       <div className="w-[90%] h-[40%] sm:flex flex justify-center items-center gap-5 flex-col sm:flex-row">
-        <button className="sm:w-[200px] w-[200px] bg-blue-500 text-white font-bold border-0 sm:h-[40px] h-[45px] rounded-[7px] hover:bg-black hover:text-white hover:shadow-[0px_0px_10px_2px_white] transition-all">
+        <button className="sm:w-[200px] w-[200px] bg-blue-500 text-white font-bold border-0 sm:h-[40px] h-[45px] rounded-[7px] hover:border-1 hover:bg-blue-400/5 hover:text-white hover:shadow-[0px_0px_6px_1px_white] transition-all">
           Connect
         </button>
-        <button className="w-[150px] border-1 text-white h-[40px] rounded-[5px] hover:bg-black hover:text-white hover:shadow-[0px_0px_10px_2px_white] transition-all">
+        <button className="sm:w-[200px] w-[150px] border-1 text-white h-[40px] rounded-[5px] hover:bg-blue-500 hover:text-white hover:shadow-[0px_0px_5px_1px_white] transition-all">
           Learn More
         </button>
       </div>
 
       {/* Social Media Links */}
-      <section className="w-[90%] sm:h-[40%] h-[25%] flex justify-center sm:items-center items-start gap-10">
-        <a href="#facebook">
+      <section className="w-[90%] sm:h-[40%] h-[25%] flex justify-center sm:items-center items-start gap-10 sm:hidden">
+        <a href="https://www.facebook.com/sravana.kumvara/">
           <i className="ri-facebook-circle-fill text-2xl"></i>
         </a>
-        <a href="#github">
+        <a href="https://github.com/SharwanKunwar">
           <i className="ri-github-fill text-2xl"></i>
         </a>
-        <a href="#instagram">
+        <a href="#">
           <i className="ri-instagram-fill text-2xl"></i>
         </a>
       </section>
+
+      <motion.section
+          className="bg-white w-[90%] sm:h-[40%] hidden sm:block rounded-t-2xl overflow-hidden"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+        <img
+          src="https://plus.unsplash.com/premium_photo-1736726364511-84af31474064?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE2NnxDRHd1d1hKQWJFd3x8ZW58MHx8fHx8"
+          alt=""
+          className="w-full h-full object-cover"
+        />
+      </motion.section>
+
+
     </div>
   );
 }
