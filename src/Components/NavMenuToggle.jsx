@@ -5,9 +5,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 const NavMenuToggle = () => {
     const list = ["Home","About","Sem","Notes","Blogs","Contact"];
   const [isOpen, setIsOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState(null);
 
   const toggleMenu = () => {
+    if (!isOpen) {
+      setActiveItem(null);
+    }
     setIsOpen(!isOpen);
+  };
+
+  const handleItemClick = (item) => {
+    setActiveItem(item);
   };
 
   return (
@@ -39,7 +47,10 @@ const NavMenuToggle = () => {
                 {list.map((item, index) => (
                   <li
                     key={index}
-                    className="text-lg font-semibold cursor-pointer hover:text-blue-500 active:text-blue-700 transition-colors"
+                    className={`text-lg font-semibold cursor-pointer transition-colors ${
+                      activeItem === item ? 'bg-black text-white' : 'hover:text-blue-500 active:text-blue-700'
+                    }`}
+                    onClick={() => handleItemClick(item)}
                   >
                     {item}
                   </li>
